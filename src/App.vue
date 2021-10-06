@@ -1,40 +1,63 @@
 <template>
   <v-app>
     <v-app-bar
-      app
-      color="primary"
-      dark
+      
+      color="transparent"
+      flat
+      fixed
+    
+      style="padding:0"
+   
+     
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+  <div style="height:100%;margin:0;margin-left:-16px" class="mt-n2" >
+   <v-row align="center" justify="center"  no-gutters class="white pa-3" style="height:100%;width:150px;margin:0">
+     <p><v-icon>mdi-baguette</v-icon></p>
+     <p class="ml-3" style="font-weight:bold;font-size:20px;color:#F64B6B">esweet.</p>
+   </v-row>
+  </div>
+  <v-spacer></v-spacer>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+    <div class="d-flex align-center">
+      <!-- Find food button -->
+      <div class="align-center">
+        <v-btn text plain to="/" class="text-caption font-weight-bold" style="text-transform:none;">Find food</v-btn>
+        <hr v-if="$route.path=='/'" class="" style="width:25px;margin:0 34%;border: 2px solid red;border-radius:15px;margin-top:-8px">
+        <p v-else style="margin-top:-20px"> </p>
+      </div>
+      <!-- Category button -->
+      <div class="align-center">
+        <v-btn text plain to="/categories" class="text-caption font-weight-bold" style="text-transform:none;">Categories</v-btn>
+        <hr v-if="$route.path=='/categories'" class="" style="width:25px;margin:0 34%;border: 2px solid red;border-radius:15px;margin-top:-8px">
+        <p v-else style="margin-top:-20px"> </p>
       </div>
 
-      <v-spacer></v-spacer>
+      <!-- Restaurants -->
+      <div class="align-center">
+        <v-btn text plain to="/restaurants" class="text-caption font-weight-bold" style="text-transform:none;">Restaurants</v-btn>
+        <hr v-if="$route.path=='/restaurants'" class="" style="width:25px;margin:0 34%;border: 2px solid red;border-radius:15px;margin-top:-8px">
+        <p v-else style="margin-top:-20px"> </p>
+      </div>
+      <!-- About -->
+      <div class="align-center">
+        <v-btn text plain to="/about" class="text-caption font-weight-bold" style="text-transform:none;">About us</v-btn>
+        <hr v-if="$route.path=='/about'" class="" style="width:25px;margin:0 34%;border: 2px solid red;border-radius:15px;margin-top:-8px">
+        <p v-else style="margin-top:-20px"> </p>
+      </div>
+      <p class="ml-4 mr-4" style="font-size:40px">.</p>
+     <p class="text-caption font-weight-bold mt-6" style="color:#F64B6B">+234 0002221114</p>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+     
+    </div>
+    
+     <v-spacer></v-spacer>
+     <p class="text-caption font-weight-bold mt-6" >Account <v-icon size="20">mdi-chevron-down</v-icon></p>
+     <v-btn plain small text icon class="mt-1"> <v-icon size="20">mdi-shopping</v-icon></v-btn>
+
+     <v-btn rounded  color="#F64B6B" dark  class="text-caption mt-1 font-weight-bold" style="text-transform:none">Confirm Order</v-btn>
+
+
+
     </v-app-bar>
 
     <v-main>
@@ -44,7 +67,7 @@
 </template>
 
 <script>
-
+import "./App.css"
 export default {
   name: 'App',
 
