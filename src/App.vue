@@ -54,10 +54,12 @@
      <v-spacer></v-spacer>
      <div class="d-flex align-center animate__animated animate__fadeInRight">
      <p class="text-caption font-weight-bold mt-6 d-none d-sm-flex" >Account <v-icon size="20">mdi-chevron-down</v-icon></p>
-     <v-btn plain small text icon class="mt-1 d-none d-sm-flex"> <v-icon size="20">mdi-shopping</v-icon></v-btn>
+     <v-btn plain small text icon class="mt-1 d-none d-sm-flex" to="/cart"> <v-icon size="20">mdi-shopping</v-icon></v-btn>
 
      <v-btn rounded  color="#F64B6B" dark  class="text-caption mt-1 font-weight-bold d-none d-sm-flex" style="text-transform:none">Confirm Order</v-btn>
-    <v-app-bar-nav-icon class="d-flex d-sm-none"></v-app-bar-nav-icon>
+     <v-btn plain small text icon class="d-flex d-sm-none " to="/cart"> <v-icon size="20">mdi-shopping</v-icon></v-btn>
+     <v-btn plain small text icon class="d-flex d-sm-none " to="/cart"> <v-icon size="30">mdi-menu</v-icon></v-btn>
+    
      </div>
 
 
