@@ -11,9 +11,9 @@
      
     >
   <div style="height:100%;margin:0;margin-left:-16px" class="mt-n2" >
-   <v-row align="center" justify="center"  no-gutters class="white pa-3" style="height:100%;width:150px;margin:0">
-     <p><v-icon>mdi-baguette</v-icon></p>
-     <p class="ml-3" style="font-weight:bold;font-size:20px;color:#F64B6B">esweet.</p>
+   <v-row align="center" justify="center"  no-gutters class=" mt-1 pa-3" style="height:100%;width:150px;margin:0">
+     <p><v-icon color="#F64B6B">mdi-baguette</v-icon></p>
+     <p class="ml-1" style="font-weight:bold;font-size:20px;color:#F64B6B">esweet.</p>
    </v-row>
   </div>
   <v-spacer></v-spacer>
