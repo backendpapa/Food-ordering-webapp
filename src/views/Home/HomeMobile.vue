@@ -4,14 +4,14 @@
           <p class="text-h3 font-weight-bold" style="color:#0F2245" >Discover restaurants that delivers near you.</p>
           <v-text-field v-model="input" class="text-caption font-weight-bold" placeholder="Enter your delivery address" solo rounded append-icon="mdi-magnify" @click:append="alertme" />
     
-     <div v-if="mobile==true && input.length>0" class="animate__animated animate__fadeInUpBig">
+     <div v-if="mobile==true && input.length>0" :class="input.length>0?'animate__animated animate__fadeInUpBig animate__slower':''">
          <v-dialog
-     
+    
      
      
       v-model="dialog"
-     transition="scroll-y-reverse-transition"
-      width="500"
+     
+      origin=" right 100px"
       fullscreen
     >
       
@@ -19,7 +19,7 @@
       <v-card class="pt-2">
           <br>
         <v-card-text>
-            <v-text-field autofocus v-model="input" class="text-caption font-weight-bold" placeholder="Enter your delivery address" solo rounded append-icon="mdi-magnify" @click:append="alertme" />
+            <v-text-field  autofocus v-model="input" class="text-caption font-weight-bold" placeholder="Enter your delivery address" solo rounded append-icon="mdi-magnify" @click:append="alertme" />
         </v-card-text>
 
         <v-card-text>
