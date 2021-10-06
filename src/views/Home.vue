@@ -15,10 +15,10 @@
 
     <v-card flat v-for="i in 13"  :key="i.i" width="200" height="25vh"   class=" ma-1 pa-2 card">
        <div style="height:100%;position:relative">
-         <div style="height:8vh;margin-top:50%" class="white">
+         <div style="height:6vh;margin-top:50%" class="white">
            <v-row class="ma-2" style="height:100%" no-gutters align="center" justify="center">
              <v-icon color="#F64B6B">mdi-cookie</v-icon>
-             <p class="text-caption font-weight-bold mt-5">Pizza</p>
+             <span class="text-caption ml-1 font-weight-bold ">Pizza</span>
              <v-spacer></v-spacer>
              <v-btn icon ><v-icon color="#F64B6B">mdi-arrow-right</v-icon></v-btn>
            </v-row>
