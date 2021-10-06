@@ -11,11 +11,11 @@
           <HomeDesktop class="d-none d-sm-flex animate__animated animate__bounce" />
        </div>
        <br>
-        <carousel style="" :nav="false" autoWidth   >
+        <carousel class="animate__animated animate__fadeIn animate__slower" style="" :nav="false" autoWidth   >
 
     <v-card flat v-for="i in 13"  :key="i.i" width="200" height="25vh"   class=" ma-1 pa-2 card">
        <div style="height:100%;position:relative">
-         <div style="height:8vh;margin-top:45%" class="white">
+         <div style="height:8vh;margin-top:50%" class="white">
            <v-row class="ma-2" style="height:100%" no-gutters align="center" justify="center">
              <v-icon color="#F64B6B">mdi-cookie</v-icon>
              <p class="text-caption font-weight-bold mt-5">Pizza</p>
