@@ -58,7 +58,7 @@
 
      <v-btn rounded  color="#F64B6B" dark  class="text-caption mt-1 font-weight-bold d-none d-sm-flex" style="text-transform:none">Confirm Order</v-btn>
      <v-btn plain small text icon class="d-flex d-sm-none " to="/cart"> <v-icon size="20">mdi-shopping</v-icon></v-btn>
-     <v-btn plain small text icon class="d-flex d-sm-none " to="/cart"> <v-icon size="23">mdi-menu</v-icon></v-btn>
+     <v-btn plain small text icon class="d-flex d-sm-none " > <v-icon size="23">mdi-menu</v-icon></v-btn>
     
      </div>
 
