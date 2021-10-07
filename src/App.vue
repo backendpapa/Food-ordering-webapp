@@ -149,7 +149,7 @@ export default {
 
   data: () => ({
     //
-    dialog:true,
+    dialog:false,
     val:1,
     items:[
       'Standard Delivery - $5.00','Bounty Delivery - $15.00'
