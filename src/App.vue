@@ -67,122 +67,49 @@
     </v-app-bar>
     <v-dialog
       v-model="dialog"
-     
+     style="background-color:#F6F6F6"
       fullscreen
     >
       
 
-      <div class="white" style="height:100%;width:100%" >
-        <v-row no-gutters>
-          <v-btn @click="dialog=!dialog" text icon><v-icon>mdi-close</v-icon></v-btn>
-        </v-row>
-        <v-container >
-           <v-row no-gutters class=""   >
-           <v-col cols="12" xl="9" lg="9" class="">
-             <v-row no-gutters class="mt-5">
-               <p class="text-h5 font-weight-bold">Shopping Cart</p>
-               <v-spacer></v-spacer>
-               <p class="text-h5 font-weight-bold">3 items</p>
-              
-             </v-row>
-             <hr style="opacity:0.2;" class="grey">
-             <div style="height:75vh;overflow-y:scroll" class="pa-2 nana">
-               <v-row no-gutters align="center" justify="center">
-                  <v-col cols="5">
-                    <p class="text-caption font-weight-bold">PRODUCT DETAILS</p>
-                  </v-col>
-                  <v-col cols="3">
-                   <p class="text-caption text-center font-weight-bold"> QUANTITY</p>
-                  </v-col>
-                  <v-col cols="2">
-                    <p class="text-caption font-weight-bold">PRICE</p>
-                  </v-col>
-                  <v-col cols="2">
-                    <p class="text-caption font-weight-bold">TOTAL</p>
-                  </v-col>
-               </v-row>
-               <v-row no-gutters v-for="i in 3" :key="i" align="center" justify="center">
-                 <v-col class="" cols="5">
-                   <v-row no-gutters >
-                      <p><v-img width="100" style="border-radius:15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"  height="100" src="./assets/bb.jpg"></v-img></p>
+      <div class=" pa-2" style="height:100%;width:100%;background-color:#F6F6F6" >
+        <v-container>
+            <v-row no-gutters align="center" justify="center">
+              <v-col  cols="12" xl="7" lg="7" >
+                  <v-btn  @click="dialog=!dialog" text plain class="ml-n5 mb-2" style="text-transform:none"><v-icon>mdi-arrow-left</v-icon>Continue Shopping</v-btn>
+                  <hr style="opacity:0.3;color:grey">
+                  <p class="mt-2 font-weight-bold">Shopping Cart</p>
+                  <v-row class="mt-n3" no-gutters>
+                    <p class="font-weight-bold text-caption">You have 4 items in your cart.</p>
+                    <v-spacer></v-spacer>
+                    <p class="text-caption">Sort by</p>
+                  </v-row>
+                  <div class="pa-2 d-flex d-sm-none ">
+                  
+                      <v-btn block color="black" dark style="text-transform:none" class="text-caption ">Proceed to Checkout <v-icon>mdi-arrow-right</v-icon></v-btn>
+                   
+                  </div>
+                  <div class="pa-2" style="height:70vh;overflow-y:scroll">
+                    <!-- desktop configuration -->
+                    <div class="d-none d-sm-flex">
+                      <cart-desktop  />
                       
-                      <div class="ml-2 d-none d-sm-flex">
-                        <div>
-                          <p class="font-weight-bold">Solid bagel</p>
-                        <p class="text-caption mt-n2">Bagels</p>
-
-                        <router-link class="text-caption" to="/" @click="remv"><p>remove</p></router-link>  
+                    </div>
+                    <!-- mobile configuration -->
+                    <div style="width:100%" class="d-flex d-sm-none">
+                        <div style="width:100%" class="">
+                          <cart-mobile />
                         </div>
-                      </div>
-                       <div class="ml-2 d-flex d-sm-none">
-                        <div>
-                          <p class="font-weight-bold mt-n3 ">Solid bagel</p>
-                        <p class="text-caption mt-n4 mb-n2">Bagels</p>
+                    </div>
+                  </div>
+              </v-col>
+              <v-col cols="5" xl="5" lg="5">
 
-                        <router-link class="text-caption " to="/" @click="remv"><p>remove</p></router-link>
-                        </div>
-                      </div>
-                   </v-row>
-                 </v-col>
-                 <v-col  cols="3">
-                   <v-row class=" d-none d-sm-flex "  no-gutters>
-                     <v-spacer></v-spacer>
-                     
-                        <v-btn icon plain   text>
-                          <v-icon>mdi-plus</v-icon>
-                        </v-btn>
-
-                       <v-text-field background-color="grey lighten-3" style="width:10px"  v-model="val"  dense solo ></v-text-field>
-
-                        <v-btn icon plain text>
-                          <v-icon>mdi-minus</v-icon>
-                        </v-btn>
-                
-                      <v-spacer></v-spacer>
-                   </v-row>
-                   <v-row class=" d-flex d-sm-none "  no-gutters>
-                     <v-spacer></v-spacer>
-                     
-                       <div>
-                          <v-btn class="ml-n1" icon plain   text>
-                          <v-icon>mdi-plus</v-icon>
-                        </v-btn>
-
-                       <v-text-field background-color="grey lighten-3" style="width:30px"  v-model="val"  dense solo ></v-text-field>
-
-                        <v-btn class="mt-n5 ml-n1" icon plain text>
-                          <v-icon>mdi-minus</v-icon>
-                        </v-btn>
-                       </div>
-                
-                      <v-spacer></v-spacer>
-                   </v-row>
-                 </v-col>
-                <v-col  cols="2">
-                    <p class="text-caption mt-4 font-weight-bold">$44.54</p>
-                 </v-col>
-                 <v-col  cols="2">
-                   <p class="text-caption mt-4 font-weight-bold">$44.54</p>
-                 </v-col>
-               </v-row>
-             </div>
-           </v-col>
-           
-       </v-row>
+              </v-col>
+            </v-row>
+            
         </v-container>
-       <v-navigation-drawer
-       class="d-none d-sm-flex"
-      absolute
-      color="#F5F5F6"
-      permanent
-      width="350"
-      right
-       fixed
-    >
-      
-
-     
-    </v-navigation-drawer>
+       
      
       </div>
     </v-dialog>
@@ -193,14 +120,24 @@
 </template>
 
 <script>
+import CartDesktop from './views/Cart/CartDesktop.vue'
+import CartMobile from './views/Cart/CartMobile.vue'
 import "./App.css"
 export default {
   name: 'App',
+  components:{
+    CartDesktop,
+    CartMobile
+  },
 
   data: () => ({
     //
-    dialog:false,
-    val:1
+    dialog:true,
+    val:1,
+    items:[
+      'Standard Delivery - $5.00','Bounty Delivery - $15.00'
+    ],
+    delivery:"Standard Delivery - $5.00"
   }),
 };
 </script>
@@ -212,5 +149,6 @@ export default {
   ::-webkit-scrollbar {
     display: none;
   }
+
 
 </style>
