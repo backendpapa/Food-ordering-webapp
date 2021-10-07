@@ -87,7 +87,7 @@
                   <div class="pa-2 d-flex d-sm-none ">
                   
                       <v-btn block color="black" dark style="text-transform:none" class="text-caption ">Proceed to Checkout <v-icon>mdi-arrow-right</v-icon></v-btn>
-                   
+                    
                   </div>
                   <div class="pa-2 d-none d-sm-flex d-md-none ">
                   
