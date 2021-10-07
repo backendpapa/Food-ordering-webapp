@@ -1,6 +1,6 @@
 <template>
   <div>
-      <v-card v-for="i in 6" :key="i" class=" mb-2" height="16vh">
+      <v-card v-for="i in 6" :key="i" class="pa-2 mb-2" height="16vh">
                         <v-row  align="center" justify="center" no-gutters>
                           <div>
                             <p class="text-left"><v-img style="border-radius:15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" width="13vh" height="13vh" src="../../assets/bb.jpg"></v-img></p>

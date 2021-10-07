@@ -91,8 +91,10 @@
                   </div>
                   <div class="pa-2" style="height:70vh;overflow-y:scroll">
                     <!-- desktop configuration -->
-                    <div class="d-none d-sm-flex">
-                      <cart-desktop  />
+                    <div style="width:100%" class="d-none d-sm-flex">
+                      <div style="width:100%">
+                        <cart-desktop  />
+                      </div>
                       
                     </div>
                     <!-- mobile configuration -->
