@@ -89,6 +89,11 @@
                       <v-btn block color="black" dark style="text-transform:none" class="text-caption ">Proceed to Checkout <v-icon>mdi-arrow-right</v-icon></v-btn>
                    
                   </div>
+                  <div class="pa-2 d-none d-sm-flex d-md-none ">
+                  
+                      <v-btn block color="black" dark style="text-transform:none" class="text-caption ">Proceed to Checkout <v-icon>mdi-arrow-right</v-icon></v-btn>
+                   
+                  </div>
                   <div class="pa-2" style="height:70vh;overflow-y:scroll">
                     <!-- desktop configuration -->
                     <div style="width:100%" class="d-none d-sm-flex">
@@ -105,8 +110,18 @@
                     </div>
                   </div>
               </v-col>
-              <v-col cols="5" xl="5" lg="5">
-
+              <v-col cols="12"  xl="5" lg="5" class="pl-10 pr-10 d-sm-none d-md-flex">
+                <div style="width:100%" class="d-none d-sm-flex">
+                    <div style="width:100%" class="" >
+                      <v-card style="border-radius:15px"  flat class="pa-2"  height="90vh">
+                        <p><v-img src="./assets/food.png"></v-img></p>
+                        <p class="text-center font-weight-bold">Its time to place your order, Yummy!</p>
+                        <p class="text-caption red--text text-center">Flash sales discount soon</p>
+                        <v-btn color="black" class="text-caption" block large dark style="text-transform:none">Proceed to Checkout <v-icon>mdi-arrow-right</v-icon></v-btn>
+                  </v-card>
+                    </div>
+                </div>
+                  
               </v-col>
             </v-row>
             
