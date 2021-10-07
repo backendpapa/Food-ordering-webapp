@@ -104,7 +104,7 @@
                <v-row no-gutters v-for="i in 3" :key="i" align="center" justify="center">
                  <v-col class="" cols="5">
                    <v-row no-gutters >
-                      <p><v-img width="100"  height="100" src="./assets/bb.jpg"></v-img></p>
+                      <p><v-img width="100" style="border-radius:15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"  height="100" src="./assets/bb.jpg"></v-img></p>
                       
                       <div class="ml-2 d-none d-sm-flex">
                         <div>
@@ -116,7 +116,7 @@
                       </div>
                        <div class="ml-2 d-flex d-sm-none">
                         <div>
-                          <p class="font-weight-bold ">Solid bagel</p>
+                          <p class="font-weight-bold mt-n3 ">Solid bagel</p>
                         <p class="text-caption mt-n4 mb-n2">Bagels</p>
 
                         <router-link class="text-caption " to="/" @click="remv"><p>remove</p></router-link>
