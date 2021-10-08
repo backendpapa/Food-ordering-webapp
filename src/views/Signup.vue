@@ -2,7 +2,7 @@
   <div class="#F5F5F5" style="padding-top:10vh;background-color:#F5F5F5;height:100%" >
       <v-row no-gutters align="center" justify="center">
         <v-col cols="12" xl="4" lg="4">
-            <v-card height="85vh" class="white ma-2 pa-4" flat>
+            <v-card  class="white ma-2 pa-4" flat>
               <v-row no-gutters>
                 <v-spacer></v-spacer>
                 <v-avatar  style="border-radius:50%" color="#F64B6B" size="80">
