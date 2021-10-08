@@ -47,7 +47,7 @@
 export default {
     data() {
     return {
-      center: { lat: 45.508, lng: -73.587 },
+      center: null,
       toggle:false,
        currentPlace: null,
     }
