@@ -5,7 +5,7 @@
              
               <GmapMap
       :center='center'
-      :zoom='12'
+      :zoom='14'
       :options="{
    zoomControl: false,
    mapTypeControl: false,
@@ -29,10 +29,23 @@
          </v-col>
          <v-col class="d-flex d-sm-none"  cols="12" xl="4" lg="4">
              <div>
-                 <div  v-if="toggle==false" style="height:10vh;width:100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);position:absolute;bottom:0;" class="white pa-2 ">
-                        <v-btn style="text-transform:none" class="text-caption" @click="toggle=!toggle" block color="black" large dark>More details</v-btn>
+                 <div  v-if="toggle==false" style="height:10vh;width:100%;position:absolute;bottom:30px;" class=" pa-2 ">
+                        <v-fab-transition>
+              <v-btn
+                v-show="!hidden"
+                color="pink"
+                dark
+                absolute
+                top
+                right
+                fab
+                @click="toggle=!toggle"
+              >
+                <v-icon>mdi-compass</v-icon>
+              </v-btn>
+            </v-fab-transition>
                  </div>
-                 <div  v-else style="height:40vh;width:100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);position:absolute;bottom:0;" class="white pa-2  ">
+                 <div  v-else style="height:40vh;width:100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);position:absolute;bottom:0;" class="white pa-2 animate__animated animate__fadeIn ">
                     <v-btn icon @click="toggle=!toggle"  plain> <v-icon>mdi-close</v-icon></v-btn>
              </div>
              </div>
@@ -46,7 +59,7 @@
 export default {
     data() {
     return {
-      center: { lat: 45.508, lng: -73.587 },
+      center: { lat: 8.9868, lng: 7.3626 },
       toggle:false,
        currentPlace: null,
     }
@@ -59,13 +72,7 @@ export default {
       this.currentPlace = place;
     },
     geolocate: function() {
-      navigator.geolocation.getCurrentPosition(position => {
-        this.center = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude,
-        };
-      });
-     
+      console.log("hello")
     },
   },
 }
