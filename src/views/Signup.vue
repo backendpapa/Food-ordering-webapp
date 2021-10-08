@@ -57,9 +57,10 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
                 
               </v-row> 
               <div style="">
+                
                 <v-row class="" no-gutters>
                <v-avatar color="black" size="12" style="border-radius:50%">
-                  <input type="checkbox" name="" id="">
+                  <v-checkbox background-color="black" dark dense color="#F64B6B" class="ml-n3 mt-4" type="checkbox"  name="" id="" />
                   
                </v-avatar>
                <p class="text-caption font-weight-bold mt-n1 ml-1">I accept the <span class="" style="color:#F64B6B">Terms and Conditions</span></p>
@@ -79,5 +80,7 @@ export default {
 </script>
 
 <style>
-
+input:checked{
+  color: red;
+}
 </style>
