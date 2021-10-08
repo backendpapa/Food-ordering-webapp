@@ -60,7 +60,7 @@
 
      <v-btn rounded  color="#F64B6B" dark  class="text-caption mt-1 font-weight-bold d-none d-sm-flex" style="text-transform:none">Confirm Order</v-btn>
      <v-btn plain small text icon class="d-flex d-sm-none " @click="dialog=!dialog" > <v-icon size="20">mdi-shopping</v-icon></v-btn>
-     <v-btn plain small text icon class="d-flex d-sm-none " @click="drawer=!drawer" > <v-icon size="23">mdi-menu</v-icon></v-btn>
+     <v-btn plain small text icon class="d-flex d-sm-none " @click="drawer=!drawer" > <v-icon size="27">mdi-menu</v-icon></v-btn>
     
      </div>
 
@@ -203,6 +203,7 @@ export default {
       {name:'Profile',icon:"mdi-account",to:'/profile'},
       {name:'Orders',icon:"mdi-account",to:'/account/order'},
       {name:'wallet',icon:"mdi-account",to:'/account/wallet'},
+      {name:'signup',icon:"mdi-account",to:'/user/signup'},
     ]
   }),
 };
