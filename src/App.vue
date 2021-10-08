@@ -58,13 +58,52 @@
 
      <v-btn rounded  color="#F64B6B" dark  class="text-caption mt-1 font-weight-bold d-none d-sm-flex" style="text-transform:none">Confirm Order</v-btn>
      <v-btn plain small text icon class="d-flex d-sm-none " @click="dialog=!dialog" > <v-icon size="20">mdi-shopping</v-icon></v-btn>
-     <v-btn plain small text icon class="d-flex d-sm-none " > <v-icon size="23">mdi-menu</v-icon></v-btn>
+     <v-btn plain small text icon class="d-flex d-sm-none " @click="drawer=!drawer" > <v-icon size="23">mdi-menu</v-icon></v-btn>
     
      </div>
 
 
 
     </v-app-bar>
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      temporary
+      class="pa-4"
+    >
+     <div >
+       <v-row no-gutters align="center"  style="height:40vh">
+        <div>
+           <v-avatar size="120">
+         <v-img src="https://images.unsplash.com/photo-1567037782848-d0fe9a51ec4c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjB3b21lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" ></v-img>
+       </v-avatar>
+       <p class="text-h5 font-weight-bold">Jane Doe</p>
+       <p class="mt-n5" style="font-size:12px"><i>janedoe@gmail.com</i></p>
+        </div>
+       </v-row>
+
+
+     </div>
+
+    
+
+      <v-list dense>
+        <v-list-item
+         v-for="i in menu"
+         :key="i.name"
+          link
+          :to="i.to"
+        >
+          <v-list-item-icon>
+            <v-icon>{{i.icon}}</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>{{i.name}}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
     <v-dialog
       v-model="dialog"
      style="background-color:#F6F6F6"
@@ -151,11 +190,18 @@ export default {
   data: () => ({
     //
     dialog:false,
+    drawer:false,
     val:1,
     items:[
       'Standard Delivery - $5.00','Bounty Delivery - $15.00'
     ],
-    delivery:"Standard Delivery - $5.00"
+    delivery:"Standard Delivery - $5.00",
+    menu:[
+      {name:'Categories',icon:"mdi-dashboard",to:'/categories'},
+      {name:'Profile',icon:"mdi-account",to:'/profile'},
+      {name:'Orders',icon:"mdi-account",to:'/account/order'},
+      {name:'wallet',icon:"mdi-account",to:'/account/wallet'},
+    ]
   }),
 };
 </script>
