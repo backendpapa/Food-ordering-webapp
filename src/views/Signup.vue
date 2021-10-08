@@ -56,7 +56,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
                 </v-col>
                 
               </v-row> 
-              <div style="position:absolute;bottom:10px;width:93%">
+              <div style="">
                 <v-row class="" no-gutters>
                <v-avatar color="black" size="12" style="border-radius:50%">
                   <input type="checkbox" name="" id="">
