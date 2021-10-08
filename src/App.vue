@@ -69,6 +69,7 @@
       v-model="dialog"
      style="background-color:#F6F6F6"
       fullscreen
+      class="animate__animated animate__fadeIn animate__slower"
     >
       
 

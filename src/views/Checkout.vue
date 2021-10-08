@@ -1,5 +1,5 @@
 <template>
-  <div class="#F5F9FF" style="background-color:#F5F9FF;height:90vh">
+  <div class="#F5F9FF animate__animated animate__fadeIn animate__slower" style="background-color:#F5F9FF;height:90vh">
     <div class="" style="margin-top:10vh">
 
     </div>
