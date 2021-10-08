@@ -86,12 +86,12 @@
                   </v-row>
                   <div class="pa-2 d-flex d-sm-none ">
                   
-                      <v-btn block color="black" dark style="text-transform:none" class="text-caption ">Proceed to Checkout <v-icon>mdi-arrow-right</v-icon></v-btn>
+                      <v-btn block color="black" dark style="text-transform:none" to="/payment/checkout" class="text-caption " @click="dialog=!dialog">Proceed to Checkout <v-icon>mdi-arrow-right</v-icon></v-btn>
                     
                   </div>
                   <div class="pa-2 d-none d-sm-flex d-md-none ">
                   
-                      <v-btn block color="black" dark style="text-transform:none" class="text-caption ">Proceed to Checkout <v-icon>mdi-arrow-right</v-icon></v-btn>
+                      <v-btn block color="black" to="/payment/checkout" @click="dialog=!dialog" dark style="text-transform:none" class="text-caption ">Proceed to Checkout <v-icon>mdi-arrow-right</v-icon></v-btn>
                    
                   </div>
                   <div class="pa-2" style="height:70vh;overflow-y:scroll">
@@ -117,7 +117,7 @@
                         <p><v-img src="./assets/food.png"></v-img></p>
                         <p class="text-center font-weight-bold">Its time to place your order, Yummy!</p>
                         <p class="text-caption red--text text-center">Flash sales discount soon</p>
-                        <v-btn color="black" class="text-caption" block large dark style="text-transform:none">Proceed to Checkout <v-icon>mdi-arrow-right</v-icon></v-btn>
+                        <v-btn color="black" class="text-caption" block large dark style="text-transform:none" to="/payment/checkout" @click="dialog=!dialog">Proceed to Checkout <v-icon>mdi-arrow-right</v-icon></v-btn>
                   </v-card>
                     </div>
                 </div>
