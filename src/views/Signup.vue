@@ -5,7 +5,7 @@
             <v-card height="85vh" class="white ma-2 pa-4" flat>
               <v-row no-gutters>
                 <v-spacer></v-spacer>
-                <v-avatar  style="border-radius:50%" color="#436BDD" size="80">
+                <v-avatar  style="border-radius:50%" color="#F64B6B" size="80">
                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 width="64" height="64"
 viewBox="0 0 172 172"
@@ -62,9 +62,9 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
                   <input type="checkbox" name="" id="">
                   
                </v-avatar>
-               <p class="text-caption font-weight-bold mt-n1 ml-1">I accept the <span class="" style="color:#436BDD">Terms and Conditions</span></p>
+               <p class="text-caption font-weight-bold mt-n1 ml-1">I accept the <span class="" style="color:#F64B6B">Terms and Conditions</span></p>
               </v-row>
-              <v-btn color="#436BDD" style="text-transform:none" dark rounded block>Signup</v-btn>
+              <v-btn color="#F64B6B" style="text-transform:none" dark rounded block>Signup</v-btn>
               </div>
             </v-card>
              </v-col>
