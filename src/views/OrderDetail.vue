@@ -18,10 +18,9 @@
       style='width:100%;  height: 100vh;'
     >
     <GmapMarker
-        :key="index"
+       
         
         :position="center"
-        @click="center=center"
       />
     </GmapMap>
          </v-col>
@@ -47,7 +46,7 @@
 export default {
     data() {
     return {
-      center: null,
+      center: { lat: 45.508, lng: -73.587 },
       toggle:false,
        currentPlace: null,
     }
