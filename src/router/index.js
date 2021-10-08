@@ -6,6 +6,7 @@ import Category from '../views/Category.vue'
 import CategoryDetail from '../views/CategoryDetail.vue'
 import Order from '../views/Order.vue'
 import OrderDetail from '../views/OrderDetail.vue'
+import Signup from '../views/Signup.vue'
 
 Vue.use(VueRouter)
 
@@ -19,6 +20,11 @@ const routes = [
     path: '/payment/checkout',
     name: 'Cart',
     component: Checkout
+  },
+  {
+    path: '/user/signup',
+    name: 'Signup',
+    component: Signup
   },
   {
     path: '/account/order/detail',

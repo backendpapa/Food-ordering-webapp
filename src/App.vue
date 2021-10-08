@@ -199,7 +199,7 @@ export default {
     ],
     delivery:"Standard Delivery - $5.00",
     menu:[
-      {name:'Categories',icon:"mdi-dashboard",to:'/categories'},
+      {name:'Categories',icon:"mdi-category",to:'/categories'},
       {name:'Profile',icon:"mdi-account",to:'/profile'},
       {name:'Orders',icon:"mdi-account",to:'/account/order'},
       {name:'wallet',icon:"mdi-account",to:'/account/wallet'},
