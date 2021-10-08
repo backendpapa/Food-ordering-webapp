@@ -1,5 +1,5 @@
 <template>
-  <div class="#F5F5F5" style="padding-top:10vh;background-color:#F5F5F5;height:100%" >
+  <div class="#" style="padding-top:10vh;background-color:#F9F9F9;height:100%" >
       <v-row no-gutters align="center" justify="center">
         <v-col cols="12" xl="4" lg="4">
             <v-card  class="white ma-2 pa-4" flat>
