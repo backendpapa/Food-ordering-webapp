@@ -16,7 +16,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
               <p style="font-weight:bold" class="text-center text-caption ">Create new account</p>
               <p class="text-center text-caption mt-n4 mb-4">Enter your credentials below</p>
 
-              <hr style="opacity:0.2" class="mb-2">
+              <hr style="opacity:0.2" class="">
               <v-row class="" no-gutters>
                 <v-col cols="12" xl="6" lg="6" class="">
                   <v-text-field solo rounded dense placeholder="Fullname" flat outlined color="grey" class="text-caption font-weight-bold"></v-text-field>
@@ -28,14 +28,14 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
                  </v-col>
               </v-row>
 
-              <v-row no-gutters class="mt-n3">
+              <v-row no-gutters class="">
                 <v-col cols="12"  class="">
                   <v-text-field solo rounded dense placeholder="Email address" flat outlined color="grey" class="text-caption font-weight-bold"></v-text-field>
                 </v-col>
                 
               </v-row> 
 
-              <v-row no-gutters class="mt-n3">
+              <v-row no-gutters class="">
                 <v-col cols="7" xl="7" lg="7" class="">
                   <v-text-field solo rounded dense placeholder="Country" flat outlined color="grey" class="text-caption font-weight-bold"></v-text-field>
                 </v-col>
@@ -46,7 +46,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
                  </v-col>
               </v-row>
              
-               <v-row no-gutters class="mt-n3">
+               <v-row no-gutters class="">
                  <v-col cols="5"  class="">
                   <v-text-field solo rounded dense placeholder="Password" type="password" flat outlined color="grey" class="text-caption font-weight-bold"></v-text-field>
                 </v-col>
@@ -57,7 +57,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
                 
               </v-row> 
               <div style="position:absolute;bottom:10px;width:93%">
-                <v-row class="mb-n2" no-gutters>
+                <v-row class="" no-gutters>
                <v-avatar color="black" size="12" style="border-radius:50%">
                   <input type="checkbox" name="" id="">
                   
